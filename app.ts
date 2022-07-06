@@ -169,3 +169,26 @@ const response: target = "failer";
 //   id: string;
 //   title: string;
 // }[];
+
+// in recat project
+
+// Declaring type of props - see "Typing Component Props" for more examples
+type AppProps = {
+  message: string;
+  number: number;
+}; /* use `interface` if exporting so that consumers can extend */
+
+// Easiest way to declare a Function Component; return type is inferred.
+
+const App = ({ message, number }: AppProps): string | number => "";
+
+type counter = {
+  count: string;
+  value: number;
+};
+
+const myFunc: Function = ({ count, value }: counter) => {
+
+
+  
+};
